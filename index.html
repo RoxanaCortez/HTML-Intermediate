@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intermediate</title>
+</head> 
+<body>
+    <header>
+        <h1 align="center">Registration Form</h1>
+    </header>
+    <section>
+        <article>
+            <form action="index.html" method="post">
+        
+            <fieldset>
+                <legend><h2>Personal Information</h2></legend>
+        
+                <label for="name">Name:</label>
+                <input name="name" type="text" placeholder="Name" required="true">
+        
+                <label for="date of birth">Birthdate:</label>
+                <input name="date of birth" type="date" required>
+                        
+                <label for="favorite">Favorite animal:</label>
+                <input name="favorite" type="text" placeholder="Favorite animal">
+            </fieldset>
+        
+            <fieldset>
+                <legend><h2>Account</h2></legend>
+        
+                <label for="e-mail">E-mail:</label>
+                <input name="e-mail" type="email" placeholder="roxana@gmail.com" required>
+                        
+                <label form="password">Password:</label>
+                <input name="password" type="password" placeholder="Password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "Must contain at least 
+                one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        
+                <label form="verify-password">Verify Password:</label>
+                <input name="verify-password" name="password"  type="password" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "Must contain 
+                at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                required>
+            </fieldset>
+        
+            <fieldset>
+                <legend><h2>Contact</h2></legend>
+        
+                <label for="address">Address:</label>
+                <input name="address" type="text" placeholder="Address">
+        
+                <label for="city">City:</label>
+                <input name="city" type="text" placeholder="City">
+        
+                <label for="country">Country:</label>
+                <select name="country" required>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="México">México</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+        
+                <label for="phone">Phone Number:</label>
+                <input name="phone" type="text" placeholder="Phone Number">
+            </fieldset>
+                
+            <fieldset>
+                <legend><h2>Submit</h2></legend>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        </article>
+    </section>
+</body>
+</html>
